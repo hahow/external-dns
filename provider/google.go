@@ -438,9 +438,14 @@ func newRecord(ep *endpoint.Endpoint) *dns.ResourceRecordSet {
 	// we should go back to storing DNS names with a trailing dot internally. This
 	// way we can use it has is here and trim it off if it exists when necessary.
 	targets := make([]string, len(ep.Targets))
-	copy(targets, []string(ep.Targets))
-	if ep.RecordType == endpoint.RecordTypeCNAME {
-		targets[0] = ensureTrailingDot(targets[0])
+	copy(targets, ep.Targets)
+	for idx, target := range targets {
+		switch ep.RecordType {
+		case endpoint.RecordTypeCNAME:
+			fallthrough
+		case endpoint.RecordTypeSRV:
+			targets[idx] = ensureTrailingDot(target)
+		}
 	}
 
 	// no annotation results in a Ttl of 0, default to 300 for backwards-compatibility
