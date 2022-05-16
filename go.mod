@@ -34,7 +34,7 @@ require (
 	github.com/linki/instrumented_http v0.2.0
 	github.com/linode/linodego v0.3.0
 	github.com/mattn/go-isatty v0.0.7 // indirect
-	github.com/miekg/dns v1.0.14
+	github.com/miekg/dns v1.1.25
 	github.com/nesv/go-dynect v0.6.0
 	github.com/nic-at/rc0go v1.1.0
 	github.com/oracle/oci-go-sdk v1.8.0
@@ -48,7 +48,7 @@ require (
 	github.com/stretchr/testify v1.4.0
 	github.com/transip/gotransip v5.8.2+incompatible
 	github.com/vinyldns/go-vinyldns v0.0.0-20190611170422-7119fe55ed92
-	golang.org/x/net v0.0.0-20190813141303-74dc4d7220e7
+	golang.org/x/net v0.0.0-20190923162816-aa69164e4478
 	golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45
 	google.golang.org/api v0.9.0
 	gopkg.in/ns1/ns1-go.v2 v2.0.0-20190322154155-0dafb5275fd1
