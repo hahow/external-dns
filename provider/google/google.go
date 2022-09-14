@@ -447,8 +447,13 @@ func newRecord(ep *endpoint.Endpoint) *dns.ResourceRecordSet {
 	// way we can use it has is here and trim it off if it exists when necessary.
 	targets := make([]string, len(ep.Targets))
 	copy(targets, []string(ep.Targets))
-	if ep.RecordType == endpoint.RecordTypeCNAME {
-		targets[0] = provider.EnsureTrailingDot(targets[0])
+	for idx, target := range targets {
+		switch ep.RecordType {
+		case endpoint.RecordTypeCNAME:
+			fallthrough
+		case endpoint.RecordTypeSRV:
+			targets[idx] = provider.EnsureTrailingDot(target)
+		}
 	}
 
 	// no annotation results in a Ttl of 0, default to 300 for backwards-compatibility
