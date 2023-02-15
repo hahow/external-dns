@@ -38,21 +38,21 @@ require (
 	github.com/nesv/go-dynect v0.6.0
 	github.com/nic-at/rc0go v1.1.0
 	github.com/oracle/oci-go-sdk v1.8.0
-	github.com/pkg/errors v0.8.1
-	github.com/prometheus/client_golang v0.9.3
+	github.com/pkg/errors v0.9.1
+	github.com/prometheus/client_golang v1.11.1
 	github.com/sanyu/dynectsoap v0.0.0-20181203081243-b83de5edc4e0
 	github.com/sergi/go-diff v1.0.0 // indirect
-	github.com/sirupsen/logrus v1.4.2
+	github.com/sirupsen/logrus v1.6.0
 	github.com/smartystreets/go-aws-auth v0.0.0-20180515143844-0c1422d1fdb9 // indirect
 	github.com/smartystreets/gunit v1.0.2 // indirect
 	github.com/stretchr/testify v1.4.0
 	github.com/transip/gotransip v5.8.2+incompatible
 	github.com/vinyldns/go-vinyldns v0.0.0-20190611170422-7119fe55ed92
-	golang.org/x/net v0.0.0-20190813141303-74dc4d7220e7
+	golang.org/x/net v0.0.0-20200625001655-4c5254603344
 	golang.org/x/oauth2 v0.0.0-20190604053449-0f29369cfe45
 	google.golang.org/api v0.9.0
 	gopkg.in/ns1/ns1-go.v2 v2.0.0-20190322154155-0dafb5275fd1
-	gopkg.in/yaml.v2 v2.2.2
+	gopkg.in/yaml.v2 v2.3.0
 	istio.io/api v0.0.0-20190820204432-483f2547d882
 	istio.io/istio v0.0.0-20190322063008-2b1331886076
 	k8s.io/api v0.0.0-20190620084959-7cf5895f2711
